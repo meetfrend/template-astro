@@ -1,0 +1,19 @@
+---
+import { buttonVariants } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout>
+  <main class="flex min-h-svh items-center justify-center p-6">
+    <Card className="w-full max-w-md">
+      <CardHeader>
+        <CardTitle>Your new project</CardTitle>
+        <CardDescription>Astro, TypeScript, Tailwind CSS and shadcn/ui, ready to build on.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <a class={buttonVariants()} href="https://docs.astro.build" target="_blank" rel="noreferrer">Read the Astro docs</a>
+      </CardContent>
+    </Card>
+  </main>
+</Layout>
